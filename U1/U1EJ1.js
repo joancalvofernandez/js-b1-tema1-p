@@ -68,7 +68,13 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+// Function that receives a planet object and returns the name and diameter of the planet.
+function planetName(planetes) {
+    return [planetes.name, planetes.diameter];
+}
 
+const result = planets.map(planetName);
+console.log(result);
 
 /**
  * TEST
