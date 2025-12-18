@@ -31,8 +31,14 @@ for(let i=0; i<10;i++){
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function fibonacci(valor){
 
-
+   if (valor == 1 || valor == 0) {
+		return valor;
+   } else {
+		return fibonacci(valor-2) + fibonacci(valor-1);
+   }
+}
 
 /**
  * TEST
