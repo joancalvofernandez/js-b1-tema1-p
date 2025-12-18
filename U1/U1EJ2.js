@@ -66,7 +66,13 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+// Function that receives a planet object and returns the objectes que hasRing == true.
+function planetRing(planetes) {
+    return planetes.hasRings === true;
+}
 
+const result = planets.filter(planetRing);
+console.log(result);
 
 /**
  * TEST
