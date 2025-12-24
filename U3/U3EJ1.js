@@ -24,8 +24,20 @@ console.log(hypotenuse(3,4));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function hypotenuse(base, altura){
+//def¡nim una funció per a calcular el quadrat d'un número, equivalent a Math.pow(numero, 2);
+  function square(numero){
 
+    return numero * numero;
 
+  }
+  //recollim els quadrats de base i altura i els sumem
+  let resultat = square(base) + square(altura);
+
+  //fem l'arrel quadrada amb la funció java corresponent i retornem el valor resultant
+  return Math.sqrt(resultat);
+
+}
 
 /**
  * TEST
