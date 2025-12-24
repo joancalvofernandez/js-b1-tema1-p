@@ -14,9 +14,18 @@
 	rangeOfNumbers(4) hauria de ser 1+2+3+4 = 10
 */
 
+console.log(rangeOfNumbers(4));
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function rangeOfNumbers(valor){
+	
+	if (valor <= 0) {
+		return 0;
+   	} else{
 
+	return valor + rangeOfNumbers(valor-1);
+   }
+}
 
 
 /**

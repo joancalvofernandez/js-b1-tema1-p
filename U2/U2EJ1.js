@@ -30,7 +30,7 @@ for(let i=0; i<10;i++){
 }
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
+// La succesió de fibonacci es calcula amb la suma dels dos anteriors amb la particularitat que cal anar amb compte amb els valors 0 i 1.
 function fibonacci(valor){
 
    if (valor == 1 || valor == 0) {
