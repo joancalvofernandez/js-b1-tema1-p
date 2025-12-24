@@ -61,7 +61,26 @@ console.log(totalApproved(classroomStudents));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function totalApproved(alumnes){
+//Definim variable per a recollir el total d'aprovats.
+  let total = 0;
 
+  for (let i = 0; i < alumnes.length; i++){
+//Usem la funció per verificar si estan aprovats passant el valor de nota concret de cada estudiant
+    total = total + isApproved(alumnes[i].averageGrade);
+
+  }
+
+  return total;
+  
+//Està aprovat si la nota es major o igual a 5
+  function isApproved (nota){
+
+   return nota >=5 ? 1 : 0;
+
+  }
+
+}
 
 
 /**
