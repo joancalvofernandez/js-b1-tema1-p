@@ -61,7 +61,25 @@ console.log(currentAge(classroomStudents));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function currentAge(alumnes){
+//definim un vector que arreplegue les edats dels estudiants i recorrem l'objecte.
+  let edat = new Array();
 
+  for (let i = 0; i < alumnes.length; i++){
+//Usem la funció de càlcul d'edat passant el valor d'any de naixement concret de cada element
+    edat.push(calculatedYears(alumnes[i].yearOfBirth));
+
+  }
+
+  return edat;
+
+  function calculatedYears (anys){
+
+    return 2023-anys;
+
+  }
+
+}
 
 
 /**
