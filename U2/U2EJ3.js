@@ -15,10 +15,27 @@
 //Do not modify this code:
 let myArray = new Array();
 oddNumbers(7, myArray);
+console.log(myArray);
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function oddNumbers(valor, meuArray){
+//Quan el número es menor d'1, hem de parar de cridar la funció i retornar el que tenim
+	if (valor < 1){
 
+		return meuArray;
+
+	}
+//Hem de detectar els valors senalls i posar-los al vector
+	if (valor % 2 !== 0) {
+
+			meuArray.push(valor);
+
+	}
+//Cridem a la funció per al següent número anterior del valor.
+	return oddNumbers(valor - 1, meuArray);
+
+}
 
 
 /**
