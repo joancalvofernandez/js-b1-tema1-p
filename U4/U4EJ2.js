@@ -35,7 +35,7 @@ console.log(evenNumbers(4,8,29,9)); //This will return [4,8,28,8]
 function evenNumbers(...numeros){
 //Definim clon de l'entrada per a calcular els residus entre 2 i esbrinar si son parells - 0 o senalls - 1
 //També tenim un vector auxiliar on desem el resultat de la resta.
-    const arr2 = [...numeros]
+    const arr2 = [...numeros];
     let aux = new Array;
   for (let i = 0; i < arr2.length; i++){
 

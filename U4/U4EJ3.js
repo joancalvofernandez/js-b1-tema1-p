@@ -55,7 +55,25 @@ console.log(oldest(classroomStudents[2], classroomStudents[3], classroomStudents
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function oldest(...arr1){
+//definim el primer element passat com a referència de més vell (nom i edat)
+  let nom = arr1[0].name;
+  let mesVell = arr1[0].yearOfBirth;
 
+  for (let i = 0; i < arr1.length; i++){
+//Compara cada element amb el més vell trobat fins eixe moment i s'actialitza, si escau
+      if (arr1[i].yearOfBirth < mesVell){
+
+          nom = arr1[i].name;
+          mesVell = arr1[i].yearOfBirth;
+
+      } 
+
+  }
+
+  return nom;
+
+}
 
 
 /**
