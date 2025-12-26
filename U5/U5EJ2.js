@@ -68,9 +68,12 @@ let planets = [
         }
     ] 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+//fem la funció amb arrow i eliminem claus perquè return va amb una única línia.
+const planetDiameter = planetes => [planetes.name, planetes.diameter];
 
-
-
+// El resultat del map el posem a una constant anomenada result.
+const result = planets.map(planetDiameter);
+console.log(result);
 
 /**
  * TEST
