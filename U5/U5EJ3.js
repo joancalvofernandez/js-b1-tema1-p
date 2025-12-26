@@ -67,7 +67,12 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+//fem la funció amb arrow i eliminem claus perquè return va amb una única línia.
+const planetHasRings = planetes => planetes.hasRings === true;
 
+// El resultat del map el posem a una constant anomenada result.
+const result = planets.filter(planetHasRings);
+console.log(result);
 
 
 /**
