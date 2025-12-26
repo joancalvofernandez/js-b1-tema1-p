@@ -60,8 +60,18 @@ const classroomStudents = [
 ];
  
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+//es reescriu la funció en tipus fletxa.
 
+const letterGrade = student => {
 
+  return student.averageGrade >= 9.0 ? 'A' : (student.averageGrade >= 8.0 ? 'B': (student.averageGrade >= 3.0 ? 'C' : 'D'));
+
+}
+
+// El resultat del map el posem a una constant anomenada result.
+const result = classroomStudents.map(letterGrade);
+
+console.log(result);
 
 
 /**
