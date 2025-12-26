@@ -28,11 +28,24 @@
   restarem 1 i per als parells en restarem 0).
   Per exemple: la crida a la funció evenNumbers(4,7,21,3); ens hauria de tornar [4,6,20,2]
 */
-console.log(evenNumbers(4,7,21,3)); //This will return [4,6,20,2]
+console.log(evenNumbers(4,8,29,9)); //This will return [4,8,28,8]
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function evenNumbers(...numeros){
+//Definim clon de l'entrada per a calcular els residus entre 2 i esbrinar si son parells - 0 o senalls - 1
+//També tenim un vector auxiliar on desem el resultat de la resta.
+    const arr2 = [...numeros]
+    let aux = new Array;
+  for (let i = 0; i < arr2.length; i++){
 
+      arr2[i] = arr2[i] % 2;
+      aux[i] = numeros[i]-arr2[i];
+
+  }
+
+    return aux;
+}
 
 
 /**
